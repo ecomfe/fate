@@ -1,0 +1,66 @@
+@require 'variable'
+
+$-header-bg-color = #252938
+$-header-text-color = #fff
+$-header-weak-color = mix($-header-text-color, $-header-bg-color, 50%)
+
+.header
+    padding: 70px _ 110px
+    color: $-header-text-color
+    background: $-header-bg-color url('../img/bg.png') no-repeat
+    background-size: cover
+
+    .title
+        margin: 0 0 rem(70)
+        font-size: rem(66)
+        font-family: "PT Serif", serif
+        font-weight: 400
+        position: relative
+        &:after
+            content: ' '
+            absolute: _ _ 0 50%
+            width: 130px
+            height: 1px
+            margin-left: -65px
+            background: linear-gradient(
+                left,
+                rgba(#fff, 0),
+                rgba(#fff, .25),
+                rgba(#fff, .3),
+                rgba(#fff, .25),
+                rgba(#fff, 0)
+            )
+
+    .slogan
+        margin: 0 0 rem(16)
+        font-size: rem(34)
+        font-family: Lato, sans-serif
+        font-weight: 100
+        line-height: 1.4em
+
+    .desc
+        margin: 0 0 rem(60)
+        font-size: rem(18)
+        color: $-header-weak-color
+
+    .nav
+        init-vi-font()
+        font-size: rem(18)
+        width: 480px
+        margin: 0 auto
+        display: flex
+        justify-content: center
+
+        a
+            width: 96px
+            margin: 0 25px
+            padding-top: 106px
+            color: $-header-weak-color
+            transition: color .3s easing('in-sine')
+            &:hover
+                color: $-header-text-color
+
+        for $name in ('saber' 'rebas' 'rider')
+            .anchor-{$name}
+                background: url('../img/' + $name + '.png') no-repeat
+                background-size: 96px 96px

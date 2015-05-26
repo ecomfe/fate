@@ -1,0 +1,70 @@
+@require 'variable'
+
+$-section-colors = {
+    'saber': #354572,
+    'rebas': #676767,
+    'rider': #79110a
+}
+
+$-section-hr-color = #666
+
+.panel
+    background-color: #fff
+    box-shadow: 0.105px 1.997px 7px 0 rgba(#0a0204, .45)
+    box-sizing: border-box
+    padding: 75px 120px
+    width: 1100px
+    margin: -60px auto 95px
+    position: relative
+    z-index: 1
+
+    .title
+        margin: 0 0 30px
+        padding-top: 146px
+        init-vi-font()
+        font-size: rem(34)
+
+    .links
+        margin-bottom: 20px
+    .links a
+        display: inline-block
+        width: 80px
+        border-radius: 2px
+        line-height: 26px
+        margin: _ 6px
+
+    .desc
+        margin: 30px 0
+        color: #696969
+        font-size: rem(21)
+
+    hr
+        border: none
+        height: 1px
+        background: linear-gradient(
+            left,
+            rgba($-section-hr-color, 0),
+            rgba($-section-hr-color, .25),
+            rgba($-section-hr-color, .3),
+            rgba($-section-hr-color, .25),
+            rgba($-section-hr-color, 0)
+        )
+        margin: 55px 0
+
+    .subtitle
+        margin: 0 0 25px
+        font-weight: 300
+        font-size: rem(24)
+
+for $name in ('saber' 'rebas' 'rider')
+    .panel-{$name}
+        .title
+            background: url('../img/' + $name + '.png') top center no-repeat
+            background-size: 136px
+
+        .links a
+            color: $-section-colors[$name]
+            border: 1px solid $-section-colors[$name]
+            &:hover
+                color: #fff
+                background: $-section-colors[$name]

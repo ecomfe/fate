@@ -1,0 +1,30 @@
+{
+    "name": "fate",
+    "version": "0.0.1",
+    "description": "The Responsive Internet Application framework for your next mobile fist project on the web.",
+    "main": "index.js",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ecomfe/fate.git"
+    },
+    "author": {
+        "name": "Firede",
+        "email": "firede@firede.us"
+    },
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/ecomfe/fate/issues"
+    },
+    "homepage": "https://github.com/ecomfe/fate#readme",
+    "devDependencies": {
+        "edp-provider-rider": "^2.0.0-alpha.1"
+    },
+    "edp": {
+        "wwwroot": "/",
+        "depDir": "dep",
+        "srcDir": "src",
+        "loaderAutoConfig": "js,htm,html,tpl,vm,phtml",
+        "loaderUrl": "http://s1.bdstatic.com/r/www/cache/ecom/esl/1-8-2/esl.js",
+        "dependencies": {}
+    }
+}
