@@ -1,4 +1,8 @@
+// Requires
+
 @require 'variable'
+
+// Variables
 
 $-section-colors = {
     'saber': #354572,
@@ -8,11 +12,13 @@ $-section-colors = {
 
 $-section-hr-color = #666
 
+// Rules
+
 .panel
     background-color: #fff
     box-shadow: 0.105px 1.997px 7px 0 rgba(#0a0204, .45)
     box-sizing: border-box
-    padding: 75px 120px
+    padding: 75px 60px
     width: 1100px
     margin: -60px auto 95px
     position: relative
@@ -49,7 +55,7 @@ $-section-hr-color = #666
             rgba($-section-hr-color, .25),
             rgba($-section-hr-color, 0)
         )
-        margin: 55px 0
+        margin: 55px
 
     .subtitle
         margin: 0 0 25px
@@ -57,7 +63,7 @@ $-section-hr-color = #666
         font-size: rem(24)
 
     .point
-        margin: 70px _
+        margin: 70px 0
         display: flex
         justify-content: center
 
