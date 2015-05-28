@@ -56,6 +56,31 @@ $-section-hr-color = #666
         font-weight: 300
         font-size: rem(24)
 
+    .point
+        margin: 70px _
+        display: flex
+        justify-content: center
+
+        .content,
+        figure
+            align-self: center
+            margin: 0 60px
+            width: 370px
+
+        .content
+            text-align: left
+            h4
+                margin: 0
+                font-weight: 400
+            p
+                margin: 8px 0
+                line-height: 1.5em
+                color: #696969
+
+    .point-focus,
+    .point-community
+        flex-direction: row-reverse
+
 for $name in ('saber' 'rebas' 'rider')
     .panel-{$name}
         .title
