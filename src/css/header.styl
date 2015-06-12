@@ -7,7 +7,8 @@ $-header-weak-color = mix($-header-text-color, $-header-bg-color, 50%)
 .header
     padding: 70px _ 110px
     color: $-header-text-color
-    background: $-header-bg-color url('../img/bg.png') no-repeat
+    background-color: $-header-bg-color
+    bg: '../img/bg.png'
     background-size: cover
 
     .title
@@ -62,5 +63,5 @@ $-header-weak-color = mix($-header-text-color, $-header-bg-color, 50%)
 
         for $name in ('saber' 'rebas' 'rider')
             .anchor-{$name}
-                background: url('../img/' + $name + '.png') no-repeat
+                bg: '../img/' + $name + '.png'
                 background-size: 96px 96px

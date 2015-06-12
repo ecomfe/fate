@@ -62,10 +62,24 @@ $-section-hr-color = #666
         font-weight: 300
         font-size: rem(24)
 
-    .point
-        margin: 70px 0
-        display: flex
-        justify-content: center
+    .content
+        text-align: left
+        h4
+            margin: 0
+            font-weight: 400
+        p
+            margin: 8px 0
+            line-height: 1.5em
+            color: #696969
+
+
+    // points modular
+
+    .points-modular
+        .point
+            margin: 70px 0
+            display: flex
+            justify-content: center
 
         .content,
         figure
@@ -73,29 +87,46 @@ $-section-hr-color = #666
             margin: 0 60px
             width: 370px
 
-        .content
-            text-align: left
-            h4
-                margin: 0
-                font-weight: 400
-            p
-                margin: 8px 0
-                line-height: 1.5em
-                color: #696969
+    for $name, $index in ('focus' 'dependency' 'community')
+        .point-{$name}
+            flex-direction: row-reverse if ($index % 2) == 0
+            figure
+                $img-src = '../img/point-' + $name + '.png'
+                ir: $img-src, center, center
+                min-height: image-size($img-src)[1]
 
-    .point-focus,
-    .point-community
-        flex-direction: row-reverse
+
+    // points spa
+
+    .points-spa
+        display: flex
+        padding: 20px
+
+        .point
+            margin: 0 40px
+            flex: 1 0
+        figure
+            margin: 20px 0
+
+    for $name in ('api' 'smooth' 'mvp')
+        .point-{$name}
+            figure
+                $img-src = '../img/point-' + $name + '.png'
+                ir: $img-src
+                size: image-size($img-src)
+
+
+// panel heading
 
 for $name in ('saber' 'rebas' 'rider')
     .panel-{$name}
         .title
-            background: url('../img/' + $name + '.png') top center no-repeat
-            background-size: 136px
+            ir: '../img/' + $name + '.png', top, center
 
         .links a
             color: $-section-colors[$name]
             border: 1px solid $-section-colors[$name]
+            transition: all .5s easing('out-circ')
             &:hover
                 color: #fff
                 background: $-section-colors[$name]
