@@ -133,6 +133,10 @@ for $name in ('saber' 'rebas' 'rider')
             bg: '../img/' + $name + '.png'
             background-position: top center
 
+        a
+            color: $-section-colors[$name]
+            &:hover
+                color: lighten($-section-colors[$name], 35%)
         .links a
             color: $-section-colors[$name]
             border: 1px solid $-section-colors[$name]
