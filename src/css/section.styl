@@ -116,12 +116,22 @@ $-section-hr-color = #666
                 size: image-size($img-src)
 
 
+    .points-platform
+        padding: 0 40px 0 47%
+        bg: '../img/point-platform.png'
+        background-position: 60px center
+
+        .point
+            margin: 40px _
+
+
 // panel heading
 
 for $name in ('saber' 'rebas' 'rider')
     .panel-{$name}
         .title
-            ir: '../img/' + $name + '.png', top, center
+            bg: '../img/' + $name + '.png'
+            background-position: top center
 
         .links a
             color: $-section-colors[$name]
