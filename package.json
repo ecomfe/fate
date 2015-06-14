@@ -17,7 +17,18 @@
     },
     "homepage": "https://github.com/ecomfe/fate#readme",
     "devDependencies": {
-        "edp-provider-rider": "^2.0.0-alpha.1"
+        "edp-provider-rider": "^2.0.0-alpha.1",
+        "gh-pages-deploy": "^0.3.0"
+    },
+    "gh-pages-deploy": {
+        "staticpath": "output",
+        "prep": [
+            "build"
+        ]
+    },
+    "scripts": {
+        "deploy": "gh-pages-deploy",
+        "build": "edp build -f"
     },
     "edp": {
         "wwwroot": "/",
