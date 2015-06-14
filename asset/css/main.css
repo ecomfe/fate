@@ -184,6 +184,24 @@ td,
 th {
   padding: 0;
 }
+@font-face {
+  font-family: 'PT Serif';
+  src: url("../font/pt-serif-regular-min.woff") format('woff'), url("../font/pt-serif-regular-min.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../font/open-sans-light.woff") format('woff'), url("../font/open-sans-light.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Open Sans Condensed';
+  src: url("../font/open-sans-cond-light.woff") format('woff'), url("../font/open-sans-cond-light.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 body {
   text-align: center;
   color: #373737;
