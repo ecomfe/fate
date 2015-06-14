@@ -22,7 +22,8 @@
     },
     "scripts": {
         "deploy": "gh-pages -d output",
-        "build": "edp build -f"
+        "build": "edp build -f",
+        "clean": "rm -rf output"
     },
     "edp": {
         "wwwroot": "/",
