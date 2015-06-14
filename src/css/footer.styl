@@ -1,0 +1,45 @@
+$-footer-bg-color = #252938
+$-footer-text-color = #fff
+$-footer-weak-color = mix($-header-text-color, $-header-bg-color, 30%)
+$-footer-hover-color = mix($-header-text-color, $-header-bg-color, 70%)
+
+.footer
+    background: $-footer-bg-color
+    color: $-footer-text-color
+    padding: 60px 0 30px
+    margin: -155px auto 0
+    font-size: 14px
+
+    .projects
+        width: 880px
+        margin: 50px auto
+        text-align: left
+
+        em
+            font-style: normal
+            font-weight: 700
+        dl
+            clearfix()
+
+        dt
+            float: left
+            clear: left
+            width: 60px
+        dd
+            float: left
+            clear: right
+            color: $-footer-weak-color
+
+        a
+            color: $-footer-text-color
+        a:hover
+            color: $-footer-hover-color
+
+    .copyright
+        color: $-footer-weak-color
+        font-size: 12px
+
+        a
+            color: $-footer-weak-color
+        a:hover
+            color: $-footer-hover-color

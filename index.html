@@ -170,10 +170,49 @@
 
         <h3 class="subtitle">工作流</h3>
 
+        <section class="point point-workflow">
+            <div class="content">
+                <p>rider 通过前后处理器混合的方式，提供了更高效的工作流。通过「预处理器」处理样式层的抽象、复用，减少冗余；通过「后处理器」处理兼容性问题、优化输出。在写 Stylus 时，只需面向「标准 CSS」开发；在后处理阶段，自动将「标准 CSS」转换为对目标浏览器优化后的「生产环境 CSS」。</p>
+            </div>
+        </section>
+
         <hr/>
 
         <h3 class="subtitle">无侵入</h3>
 
+        <section class="point point-non-invasive">
+            <div class="content">
+                <p>在预处理阶段，rider 的各种功能均通过 mixin、function 或 block 的方式提供，只有在主动调用时才输出代码。我们不提供直接给 HTML 调用的类名，不会用「样式类」污染 HTML 代码的语义。所以，您能在享受 rider 各种便捷工具的同时，写出干净且符合语义的 HTML 代码。</p>
+            </div>
+        </section>
+
     </section>
+
+    <footer class="footer">
+        <div class="projects">
+            <p>开源的 <em>Fate</em> 来自百度 <a href="http://efe.baidu.com/"><em>EFE</em></a> 的 <em>Mobile</em> 团队。在 <a href="http://efe.baidu.com/"><em>EFE</em></a>，我们还有其他开源产品：</p>
+            <dl>
+                <dt><a target="_blank" href="http://echarts.baidu.com/">ECharts</a></dt>
+                <dd>直观，生动，可交互，可高度个性化定制的数据可视化图表。</dd>
+                <dt><a target="_blank" href="https://github.com/ecomfe/esl">ESL</a></dt>
+                <dd>比 Require.js 更精简、更高效、更健壮的 AMD Loader。</dd>
+                <dt><a target="_blank" href="http://ecomfe.github.io/etpl">ETpl</a></dt>
+                <dd>强复用、灵活、高性能的 JavaScript 模板引擎。</dd>
+                <dt><a target="_blank" href="https://github.com/ecomfe/edp">EDP</a></dt>
+                <dd>提供了前端开发时常用工具：项目管理、包管理、调试、构建、代码生成、代码检测等，并允许用户自定义扩展。</dd>
+                <dt><a target="_blank" href="https://github.com/ecomfe/er">ER</a></dt>
+                <dd>富浏览器端 web 应用的框架，适用于并能很方便地构建一个整站式的 AJAX web 应用。</dd>
+                <dt><a target="_blank" href="https://github.com/ecomfe/esui">ESUI</a></dt>
+                <dd>一套功能完善，并具有强大扩展机制的 UI 组件库。基于模板、声明式地编程方式让视图更具表达能力。</dd>
+                <dt><a target="_blank" href="http://ecomfe.github.io/est/">EST</a></dt>
+                <dd>基于 Less 的样式工具库，提供了一系列方便快捷的 mixin，只在调用时才输出代码。</dd>
+                <dt><a target="_blank" href="http://ecomfe.github.io/fontmin/">Fontmin</a></dt>
+                <dd>第一个纯 JavaScript 字体子集化方案，让 @font-face 在中文世界成为可能。</dd>
+                <dt class="more"><a target="_blank" href="http://efe.baidu.com/">......</a></dt>
+                <dd>更多来自百度 EFE 的项目与文章。</dd>
+            </dl>
+        </div>
+        <div class="copyright">&copy; 2015 <a href="http://efe.baidu.com" target="_blank">Baidu EFE Team.</a></div>
+    </footer>
 </body>
 </html>

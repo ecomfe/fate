@@ -124,15 +124,22 @@ $-section-hr-color = #666
         .point
             margin: 40px _
 
+// rebas
+.panel-rebas
     for $name in ('isomorphic' 'deep-responsive')
         .point-{$name}
             $img-src = '../img/point-' + $name + '.png'
             bg: $img-src
             background-position: center 30px
-            padding-top: image-size($img-src)[1] + 80px
             padding: _ 140px
+            padding-top: image-size($img-src)[1] + 80px
             .content
                 text-align: center
+
+// rider
+.panel-rider
+    .point
+        padding: _ 60px
 
 
 // panel heading
