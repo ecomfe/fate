@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Fate :: the Deep Responsive Internet Application framework</title>
+    <link rel="stylesheet" href="asset/css/main.css"/>
+
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?8e6e31d5d5370c2982354d66ddc94ee1";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</head>
+<body>
+
+    <header class="header">
+        <h1 class="title">Fate</h1>
+        <h2 class="slogan">The Deep Responsive Internet Application framework<br/>for your next mobile first project on the web.</h2>
+        <p class="desc">前后端一体的深度响应式应用框架，前后处理器混合的样式工具库</p>
+        <nav class="nav">
+            <a class="anchor-saber" href="#saber">saber</a>
+            <a class="anchor-rebas" href="#rebas">rebas</a>
+            <a class="anchor-rider" href="#rider">rider</a>
+        </nav>
+    </header>
+
+    <section id="saber" class="panel panel-saber">
+        <h2 class="title">saber</h2>
+        <div class="links">
+            <a href="https://github.com/ecomfe/saber/" target="_blank">GitHub</a>
+            <a href="http://ecomfe.github.io/saber/doc/" target="_blank">Docs</a>
+        </div>
+        <p class="desc">
+            基于 AMD 的细粒度、模块化的前端应用框架。<br/>
+            提供了 20+ 个功能专注的模块，覆盖语言增强、DOM 操作、<br/>
+            流程控制、动画、环境侦测、SPA、MPA 等方面。
+        </p>
+
+        <hr/>
+
+        <h3 class="subtitle">模块化</h3>
+
+        <div class="points points-modular">
+            <section class="point point-focus">
+                <figure>小而专注</figure>
+                <div class="content">
+                    <h4>小而专注</h4>
+                    <p>每个 AMD 包的功能专一、目标明确，只为现代浏览器设计。API 设计直白，配有完整的测试用例与示例代码。在项目中按需引用，将应用的体积控制在理想范围之内。</p>
+                </div>
+            </section>
+
+            <section class="point point-dependency">
+                <figure>依赖清晰</figure>
+                <div class="content">
+                    <h4>依赖清晰</h4>
+                    <p>基于 AMD 成熟的模块化机制与细粒度的模块划分，框架各部分的依赖清晰，系统整体结构一目了然，能够更精细的进行模块变更、依赖、按需加载和引用的管理。</p>
+                </div>
+            </section>
+
+            <section class="point point-community">
+                <figure>社区友好</figure>
+                <div class="content">
+                    <h4>社区友好</h4>
+                    <p>遵从 AMD 规范，融入社区。需要扩充框架的功能时，有众多优秀的开源模块可以被无障碍的选用；需要拓展其他架构的 AMD 项目时，也可以轻松的引入 saber 中的模块。</p>
+                </div>
+            </section>
+        </div>
+
+        <hr/>
+
+        <h3 class="subtitle">单页面应用</h3>
+
+        <div class="points points-spa">
+            <section class="point point-api">
+                <figure>接口化</figure>
+                <div class="content">
+                    <h4>接口化</h4>
+                    <p>前后端完全基于HTTP(s)接口开发、异步通信。较普通的后端模块开发方式极大地降低了前后端的耦合程度，开发过程中前后端互不依赖，减少了互相干扰。天生地纯异步交互不仅直接提升了用户体验，同时也有效地降低了前后端通信的数据量。后端完全地服务接口化也丰富了前端的多样性，PC端、移动端、APP端都能基于同一套服务接口开发，降低了整体的开发与维护成本。</p>
+                </div>
+            </section>
+
+            <section class="point point-smooth">
+                <figure>交互流畅</figure>
+                <div class="content">
+                    <h4>交互流畅</h4>
+                    <p>纯异步交互带来了页面间的无刷新切换，在此基础上借助 saber 的动画库，能够在移动Web页面上打造出如同原生 APP 应用般流畅的页面间转场效果。对于移动Web特有的300ms点击延迟问题框架也做了充分的考虑，开发过程中无需特殊关注，点击响应分毫不差。</p>
+                </div>
+            </section>
+
+            <section class="point point-mvp">
+                <figure>关注点分离</figure>
+                <div class="content">
+                    <h4>关注点分离</h4>
+                    <p>saber 采用 MVP 构建单页面应用，充分隔离应用的业务逻辑、界面操作与数据处理。通过严格规定各自的职责范围，降低了三者之前的耦合度，利于模块的复用与单元测试。同时对三者之前的交互方式也严格约束，有效地控制了代码的复杂程度。</p>
+                </div>
+            </section>
+        </div>
+
+        <hr/>
+
+        <h3 class="subtitle">工程化</h3>
+
+        <div class="points points-platform">
+
+            <section class="point point-scaffold">
+                <div class="content">
+                    <h4>脚手架</h4>
+                    <p>saber 提供的工程化支持工具 <a href="https://github.com/ecomfe/edpx-mobile" target="_blank">edpx-mobile</a> 固化了 saber 的最佳实践，通过 init 命令一键完成项目的初始化，自动生成最优的目录结构、导入最小化的依赖模块、生成项目通用框架代码、完成基本的测试、构建相关的配置。开发过程中通过 add 命令轻松添加新的业务逻辑，自动完成相关代码的初始化工作。</p>
+                </div>
+            </section>
+
+            <section class="point point-dev">
+                <div class="content">
+                    <h4>自测环境</h4>
+                    <p>工程化工具 edpx-mobile 内置了开发自测专用的 webserver ，提供样式列表的实时编译、模版文件的处理等自动化支持，让开发调试过程更加流畅。代理功能能轻松地进行请求代理，便于数据接口的 mock 或调试。同时 webserver 也默认加载了 weinre.js 并提供了 liveroload 功能，方便手机端调试。</p>
+                </div>
+            </section>
+
+            <section class="point point-build">
+                <div class="content">
+                    <h4>打包构建</h4>
+                    <p>工程化工具 edpx-mobile 提供了简单、强大的一键构建功能，只需一条 build 命令就能自动完成样式列表的编译，JavaScript模块的编译、合并与压缩，模版文件处理等构建工作，生成最优的上线代码。同时也提供了详细的配置文件，方便用户掌控构建过程。</p>
+                </div>
+            </section>
+        </div>
+
+    </section>
+
+    <section id="rebas" class="panel panel-rebas">
+        <h2 class="title">rebas</h2>
+        <div class="links">
+            <a href="https://github.com/ecomfe/rebas/" target="_blank">GitHub</a>
+            <a href="https://github.com/ecomfe/rebas#readme" target="_blank">Docs</a>
+        </div>
+        <p class="desc">
+            基于 Node 的 JavaScript 同构解决方案。<br/>
+            提供了 saber 的服务端运行环境，使其具备从 SPA 到 MPA，<br/>
+            从前端渲染到后端渲染的深度响应式能力。
+        </p>
+
+        <hr/>
+
+        <h3 class="subtitle">同构</h3>
+
+        <section class="point point-isomorphic">
+            <div class="content">
+                <p>浏览器不再是唯一的用武之地了，从现在开始，欢迎进入崭新的全栈时代！借助于 MVP 良好的逻辑分层与众多 saber 模块的同构化努力，您的应用能无缝地同时运行在 Node 平台与客户端浏览器中，为您带来前所未有的编程体验。平台无关的代码既能运行在服务器端提供良好地 SEO 优化与首屏渲染速度，也能同时运行在浏览器中提供流畅的，无刷新、全异步交互体验。写一份代码，两处运行，不止双倍的爽快～</p>
+            </div>
+        </section>
+
+        <hr/>
+
+        <h3 class="subtitle">深度响应式</h3>
+
+        <section class="point point-deep-responsive">
+            <div class="content">
+                <p>得利于框架的平台扩展，我们进一步扩张了响应式的意义，不仅考虑终端的屏幕尺寸，更关乎应用的整体体验，更充分地为用户的体验服务，根据具体的前端运行环境（浏览器版本）选择最合适的运行模式，让您的应用即能为中高端浏览器提供最佳的单页面应用体验，也能充分照顾到低端浏览器为其提供更为有效的多页面应用体验。这一切都无关业务逻辑，rebas 会默默地在幕后帮您漂亮地解决掉～</p>
+            </div>
+        </section>
+
+    </section>
+
+    <section id="rider" class="panel panel-rider">
+        <h2 class="title">rider</h2>
+        <div class="links">
+            <a href="https://github.com/ecomfe/rider/" target="_blank">GitHub</a>
+            <a href="https://github.com/ecomfe/rider#readme" target="_blank">Docs</a>
+        </div>
+        <p class="desc">
+            基于 Stylus 与后处理器、无侵入风格的 CSS 样式工具库。<br/>
+            提供了样式初始化、顺时针简写、缓动函数、图片、排版、单位转换、<br/>
+            形状、动画、响应式工具等功能，让样式开发更轻松、便捷。
+        </p>
+
+        <hr/>
+
+        <h3 class="subtitle">高效工作流</h3>
+
+        <section class="point point-workflow">
+
+            <div class="code-blocks">
+                <div class="item">
+                    <h4>DSL(Stylus)</h4>
+
+<pre><code class="stylus">.navbar
+    fixed: _ 0 0
+    display: flex
+    box-sizing: border-box</code></pre>
+
+                </div>
+
+                <div class="item">
+                    <h4>标准 CSS</h4>
+
+<pre><code class="css">.navbar {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    box-sizing: border-box;
+}</code></pre>
+
+                </div>
+
+                <div class="item">
+                    <h4>生产环境 CSS</h4>
+
+<pre><code class="css">.navbar {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}</code></pre>
+
+                </div>
+            </div>
+
+            <div class="content">
+                <p>rider 通过前后处理器混合的方式，提供了更高效的工作流。通过「预处理器」处理样式层的抽象、复用，减少冗余；通过「后处理器」处理兼容性问题、优化输出。在写 Stylus 时，只需面向「标准 CSS」开发；在后处理阶段，自动将「标准 CSS」转换为对目标浏览器优化后的「生产环境 CSS」。</p>
+            </div>
+        </section>
+
+        <hr/>
+
+        <h3 class="subtitle">无侵入风格</h3>
+
+        <section class="point point-non-invasive">
+
+            <div class="code-blocks">
+
+                <div class="item">
+                    <h4>Bootstrap 风格</h4>
+
+                    <h5>被样式类污染的 HTML 结构</h5>
+<pre><code class="html">&lt;div class="col-xs-6 col-md-4"&gt;
+    &lt;p class="text-danger"&gt;...&lt;/p&gt;
+    &lt;button class="btn btn-danger btn-xs" type="button"&gt;...&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+
+                    <h5>无论是否用到，都输出所有样式</h5>
+<pre><code class="css">.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2,
+.col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3,
+.col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5,
+.col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6,
+.col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8,
+.col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9,
+.col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11,
+.col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12,
+.col-md-12, .col-lg-12 {
+    /* 通用样式 */
+}
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4,
+.col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8,
+.col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+    /* 另一组通用样式 */
+}
+.text-danger {
+    /* ... */
+}
+/* 更多没有被用到的样式 */</code></pre>
+
+                </div>
+
+                <div class="item">
+                    <h4>无侵入风格</h4>
+
+                    <h5>一目了然，语义化的 HTML 结构</h5>
+
+<pre><code class="html">&lt;div class="order"&gt;
+    &lt;p class="total-prices"&gt;...&lt;/p&gt;
+    &lt;button class="pay" type="button"&gt;...&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+
+                    <h5>无调用，不输出</h5>
+
+<pre><code class="css">.order {
+    /* 通过 Mixin, Function 生成样式 */
+}
+.order .total-prices {
+    /* ... */
+}
+.order .pay {
+    /* ... */
+}</code></pre>
+
+                </div>
+
+            </div>
+
+            <div class="content">
+                <p>在预处理阶段，rider 的各种功能均通过 mixin、function 或 block 的方式提供，只有在主动调用时才输出代码。我们不提供直接给 HTML 调用的类名，不会用「样式类」污染 HTML 代码的语义。所以，您能在享受 rider 各种便捷工具的同时，写出干净且符合语义的 HTML 代码。</p>
+            </div>
+        </section>
+
+    </section>
+
+    <footer class="footer">
+        <div class="projects">
+            <p>开源的 <em>Fate</em> 来自百度 <a href="http://efe.baidu.com/"><em>EFE</em></a> 的 <em>Mobile</em> 团队。在 <a href="http://efe.baidu.com/"><em>EFE</em></a>，我们还有其他开源产品：</p>
+            <dl>
+                <dt><a target="_blank" href="http://echarts.baidu.com/">ECharts</a></dt>
+                <dd>直观，生动，可交互，可高度个性化定制的数据可视化图表。</dd>
+                <dt><a target="_blank" href="https://github.com/ecomfe/esl">ESL</a></dt>
+                <dd>比 Require.js 更精简、更高效、更健壮的 AMD Loader。</dd>
+                <dt><a target="_blank" href="http://ecomfe.github.io/etpl">ETpl</a></dt>
+                <dd>强复用、灵活、高性能的 JavaScript 模板引擎。</dd>
+                <dt><a target="_blank" href="https://github.com/ecomfe/edp">EDP</a></dt>
+                <dd>提供了前端开发时常用工具：项目管理、包管理、调试、构建、代码生成、代码检测等，并允许用户自定义扩展。</dd>
+                <dt><a target="_blank" href="https://github.com/ecomfe/er">ER</a></dt>
+                <dd>富浏览器端 web 应用的框架，适用于并能很方便地构建一个整站式的 AJAX web 应用。</dd>
+                <dt><a target="_blank" href="https://github.com/ecomfe/esui">ESUI</a></dt>
+                <dd>一套功能完善，并具有强大扩展机制的 UI 组件库。基于模板、声明式地编程方式让视图更具表达能力。</dd>
+                <dt><a target="_blank" href="http://ecomfe.github.io/est/">EST</a></dt>
+                <dd>基于 Less 的样式工具库，提供了一系列方便快捷的 mixin，只在调用时才输出代码。</dd>
+                <dt><a target="_blank" href="http://ecomfe.github.io/fontmin/">Fontmin</a></dt>
+                <dd>第一个纯 JavaScript 字体子集化方案，让 @font-face 在中文世界成为可能。</dd>
+                <dt class="more"><a target="_blank" href="http://efe.baidu.com/">......</a></dt>
+                <dd>更多来自百度 EFE 的项目与文章。</dd>
+            </dl>
+        </div>
+        <div class="copyright">&copy; 2015 <a href="http://efe.baidu.com" target="_blank">Baidu EFE Team.</a></div>
+    </footer>
+
+    <script src="asset/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+</body>
+</html>
