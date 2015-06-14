@@ -168,18 +168,25 @@
 
         <hr/>
 
-        <h3 class="subtitle">工作流</h3>
+        <h3 class="subtitle">高效工作流</h3>
 
         <section class="point point-workflow">
 
             <div class="code-blocks">
+                <div class="item">
+                    <h4>DSL(Stylus)</h4>
 
-<pre><h4>DSL(Stylus)</h4><code class="stylus">.navbar
+<pre><code class="stylus">.navbar
     fixed: _ 0 0
     display: flex
     box-sizing: border-box</code></pre>
 
-<pre><h4>标准 CSS</h4><code class="css">.navbar {
+                </div>
+
+                <div class="item">
+                    <h4>标准 CSS</h4>
+
+<pre><code class="css">.navbar {
     position: fixed;
     right: 0;
     bottom: 0;
@@ -188,7 +195,12 @@
     box-sizing: border-box;
 }</code></pre>
 
-<pre><h4>生产环境 CSS</h4><code class="css">.navbar {
+                </div>
+
+                <div class="item">
+                    <h4>生产环境 CSS</h4>
+
+<pre><code class="css">.navbar {
     position: fixed;
     right: 0;
     bottom: 0;
@@ -201,6 +213,7 @@
     box-sizing: border-box;
 }</code></pre>
 
+                </div>
             </div>
 
             <div class="content">
@@ -210,9 +223,71 @@
 
         <hr/>
 
-        <h3 class="subtitle">无侵入</h3>
+        <h3 class="subtitle">无侵入风格</h3>
 
         <section class="point point-non-invasive">
+
+            <div class="code-blocks">
+
+                <div class="item">
+                    <h4>Bootstrap 风格</h4>
+
+                    <h5>被样式类污染的 HTML 结构</h5>
+<pre><code class="html">&lt;div class="col-xs-6 col-md-4"&gt;
+    &lt;p class="text-danger"&gt;...&lt;/p&gt;
+    &lt;button class="btn btn-danger btn-xs" type="button"&gt;...&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+
+                    <h5>无论是否用到，都输出所有样式</h5>
+<pre><code class="css">.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2,
+.col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3,
+.col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5,
+.col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6,
+.col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8,
+.col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9,
+.col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11,
+.col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12,
+.col-md-12, .col-lg-12 {
+    /* 通用样式 */
+}
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4,
+.col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8,
+.col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+    /* 另一组通用样式 */
+}
+.text-danger {
+    /* ... */
+}
+/* 更多没有被用到的样式 */</code></pre>
+
+                </div>
+
+                <div class="item">
+                    <h4>无侵入风格</h4>
+
+                    <h5>一目了然，语义化的 HTML 结构</h5>
+
+<pre><code class="html">&lt;div class="order"&gt;
+    &lt;p class="total-prices"&gt;...&lt;/p&gt;
+    &lt;button class="pay" type="button"&gt;...&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+
+                    <h5>无调用，不输出</h5>
+
+<pre><code class="css">.order {
+    /* 通过 Mixin, Function 生成样式 */
+}
+.order .total-prices {
+    /* ... */
+}
+.order .pay {
+    /* ... */
+}</code></pre>
+
+                </div>
+
+            </div>
+
             <div class="content">
                 <p>在预处理阶段，rider 的各种功能均通过 mixin、function 或 block 的方式提供，只有在主动调用时才输出代码。我们不提供直接给 HTML 调用的类名，不会用「样式类」污染 HTML 代码的语义。所以，您能在享受 rider 各种便捷工具的同时，写出干净且符合语义的 HTML 代码。</p>
             </div>

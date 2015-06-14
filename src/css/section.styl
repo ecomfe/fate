@@ -140,13 +140,14 @@ $-section-hr-color = #666
 .panel-rider
     .point
         padding: _ 60px
+
     .code-blocks
         text-align: left
         font-size: 12px
         line-height: 1.5em
         display: flex
 
-    pre
+    .item
         flex: 1
         border-box: box-sizing
         border-style: solid
@@ -164,16 +165,23 @@ $-section-hr-color = #666
 
             &:before
                 font-size: 20px
-                absolute: 5px _ _ 0
+                absolute: 5px _ _ -10px
                 content: '→'
-                color: #ccc
+                color: #bbb
 
         &:first-child
             border-width: 1px
             h4:before
                 content: ''
-
-
+        h5
+            margin: 10px 10px 3px
+            font-weight: 300
+            font-size: 13px
+            &:after
+                content: '：'
+        pre
+            margin: 0
+            padding: 6px
 // panel heading
 
 for $name in ('saber' 'rebas' 'rider')
