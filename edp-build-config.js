@@ -83,9 +83,12 @@ exports.getProcessors = function () {
         stylus: epr.stylus,
         compileOptions: {
             use: epr.stylusPlugin
-        }
+        },
+        files: [
+            'src/css/main.styl'
+        ]
     });
-    // var addCopyright = new AddCopyright();
+    var outputCleaner = new OutputCleaner();
 
     return [
         stylusProcessor,
@@ -94,7 +97,8 @@ exports.getProcessors = function () {
         moduleProcessor,
         html2jsClearPorcessor,
         jsProcessor,
-        pathMapperProcessor
+        pathMapperProcessor,
+        outputCleaner
     ];
 };
 
