@@ -140,6 +140,38 @@ $-section-hr-color = #666
 .panel-rider
     .point
         padding: _ 60px
+    .code-blocks
+        text-align: left
+        font-size: 12px
+        line-height: 1.5em
+        display: flex
+
+    pre
+        flex: 1
+        border-box: box-sizing
+        border-style: solid
+        border-color: #f7f7f7
+        border-width: 1px 1px 1px 0
+
+        h4
+            margin: 0
+            padding: 6px _
+            text-align: center
+            font-size: 16px
+            color: #44ade4
+            background: #f7f7f7
+            position: relative
+
+            &:before
+                font-size: 20px
+                absolute: 5px _ _ 0
+                content: '→'
+                color: #ccc
+
+        &:first-child
+            border-width: 1px
+            h4:before
+                content: ''
 
 
 // panel heading

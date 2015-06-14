@@ -17,7 +17,9 @@ epr.stylusPlugin = epr.plugin({
 
     // 追加 stylus 配置，可在此处引入 stylus 插件
     // @see: http://learnboost.github.io/stylus/docs/js.html#usefn
-    // use: funcion(style) {},
+    use: function(style) {
+        style.set('include css', true);
+    },
 
     // husl 插件，需要时启用
     // @see: http://www.boronine.com/husl/

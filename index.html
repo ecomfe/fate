@@ -171,6 +171,38 @@
         <h3 class="subtitle">工作流</h3>
 
         <section class="point point-workflow">
+
+            <div class="code-blocks">
+
+<pre><h4>DSL(Stylus)</h4><code class="stylus">.navbar
+    fixed: _ 0 0
+    display: flex
+    box-sizing: border-box</code></pre>
+
+<pre><h4>标准 CSS</h4><code class="css">.navbar {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    box-sizing: border-box;
+}</code></pre>
+
+<pre><h4>生产环境 CSS</h4><code class="css">.navbar {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}</code></pre>
+
+            </div>
+
             <div class="content">
                 <p>rider 通过前后处理器混合的方式，提供了更高效的工作流。通过「预处理器」处理样式层的抽象、复用，减少冗余；通过「后处理器」处理兼容性问题、优化输出。在写 Stylus 时，只需面向「标准 CSS」开发；在后处理阶段，自动将「标准 CSS」转换为对目标浏览器优化后的「生产环境 CSS」。</p>
             </div>
@@ -214,5 +246,8 @@
         </div>
         <div class="copyright">&copy; 2015 <a href="http://efe.baidu.com" target="_blank">Baidu EFE Team.</a></div>
     </footer>
+
+    <script src="src/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
 </body>
 </html>
