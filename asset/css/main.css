@@ -223,11 +223,6 @@ a {
   -webkit-background-size: cover;
           background-size: cover;
 }
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 192dpi) {
-  .header {
-    background-image: url("../img/bg@2x.png");
-  }
-}
 .header .title {
   margin: 0 0 4.375rem;
   font-size: 4.125rem;
@@ -292,11 +287,6 @@ a {
   -webkit-background-size: 96px 96px;
           background-size: 96px 96px;
 }
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 192dpi) {
-  .header .nav .anchor-saber {
-    background-image: url("../img/saber@2x.png");
-  }
-}
 .header .nav .anchor-rebas {
   background-image: url("../img/rebas.png");
   -webkit-background-size: 136px 136px;
@@ -305,11 +295,6 @@ a {
   -webkit-background-size: 96px 96px;
           background-size: 96px 96px;
 }
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 192dpi) {
-  .header .nav .anchor-rebas {
-    background-image: url("../img/rebas@2x.png");
-  }
-}
 .header .nav .anchor-rider {
   background-image: url("../img/rider.png");
   -webkit-background-size: 136px 136px;
@@ -317,11 +302,6 @@ a {
   background-repeat: no-repeat;
   -webkit-background-size: 96px 96px;
           background-size: 96px 96px;
-}
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 192dpi) {
-  .header .nav .anchor-rider {
-    background-image: url("../img/rider@2x.png");
-  }
 }
 .panel {
   background-color: #fff;
@@ -420,11 +400,6 @@ a {
   background-repeat: no-repeat;
   min-height: 169px;
 }
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 192dpi) {
-  .panel .point-focus figure {
-    background-image: url("../img/point-focus@2x.png");
-  }
-}
 .panel .point-dependency figure {
   color: transparent;
   font: 0/0 a;
@@ -435,11 +410,6 @@ a {
           background-size: 172px 199px;
   background-repeat: no-repeat;
   min-height: 199px;
-}
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 192dpi) {
-  .panel .point-dependency figure {
-    background-image: url("../img/point-dependency@2x.png");
-  }
 }
 .panel .point-community {
   -webkit-box-orient: horizontal;
@@ -458,11 +428,6 @@ a {
           background-size: 199px 176px;
   background-repeat: no-repeat;
   min-height: 176px;
-}
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 192dpi) {
-  .panel .point-community figure {
-    background-image: url("../img/point-community@2x.png");
-  }
 }
 .panel .points-spa {
   display: -webkit-box;
@@ -492,11 +457,6 @@ a {
   width: 100px;
   height: 100px;
 }
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 192dpi) {
-  .panel .point-api figure {
-    background-image: url("../img/point-api@2x.png");
-  }
-}
 .panel .point-smooth figure {
   color: transparent;
   font: 0/0 a;
@@ -507,11 +467,6 @@ a {
   background-repeat: no-repeat;
   width: 100px;
   height: 100px;
-}
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 192dpi) {
-  .panel .point-smooth figure {
-    background-image: url("../img/point-smooth@2x.png");
-  }
 }
 .panel .point-mvp figure {
   color: transparent;
@@ -524,11 +479,6 @@ a {
   width: 100px;
   height: 100px;
 }
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 192dpi) {
-  .panel .point-mvp figure {
-    background-image: url("../img/point-mvp@2x.png");
-  }
-}
 .panel .points-platform {
   padding: 0 40px 0 47%;
   background-image: url("../img/point-platform.png");
@@ -536,11 +486,6 @@ a {
           background-size: 310px 300px;
   background-repeat: no-repeat;
   background-position: 60px center;
-}
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 192dpi) {
-  .panel .points-platform {
-    background-image: url("../img/point-platform@2x.png");
-  }
 }
 .panel .points-platform .point {
   margin-top: 40px;
@@ -555,11 +500,6 @@ a {
   padding-right: 140px;
   padding-left: 140px;
   padding-top: 440px;
-}
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 192dpi) {
-  .panel-rebas .point-isomorphic {
-    background-image: url("../img/point-isomorphic@2x.png");
-  }
 }
 .panel-rebas .point-isomorphic .content {
   text-align: center;
@@ -581,6 +521,9 @@ a {
   padding-right: 60px;
   padding-left: 60px;
 }
+.panel-rider .content {
+  text-align: center;
+}
 .panel-rider .code-blocks {
   text-align: left;
   font-size: 12px;
@@ -589,6 +532,7 @@ a {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 30px;
 }
 .panel-rider .item {
   -webkit-box-flex: 1;
@@ -643,11 +587,6 @@ a {
   background-repeat: no-repeat;
   background-position: top center;
 }
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 192dpi) {
-  .panel-saber .title {
-    background-image: url("../img/saber@2x.png");
-  }
-}
 .panel-saber a {
   color: #354572;
 }
@@ -671,11 +610,6 @@ a {
   background-repeat: no-repeat;
   background-position: top center;
 }
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 192dpi) {
-  .panel-rebas .title {
-    background-image: url("../img/rebas@2x.png");
-  }
-}
 .panel-rebas a {
   color: #676767;
 }
@@ -698,11 +632,6 @@ a {
           background-size: 136px 136px;
   background-repeat: no-repeat;
   background-position: top center;
-}
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 192dpi) {
-  .panel-rider .title {
-    background-image: url("../img/rider@2x.png");
-  }
 }
 .panel-rider a {
   color: #79110a;
@@ -732,11 +661,6 @@ a {
   background-repeat: no-repeat;
   -webkit-background-size: cover;
           background-size: cover;
-}
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 192dpi) {
-  .footer {
-    background-image: url("../img/bg@2x.png");
-  }
 }
 .footer .projects {
   width: 820px;
@@ -991,5 +915,56 @@ a {
 
 .markdown .hljs-link_url {
     text-decoration: underline;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 192dpi) {
+  .header {
+    background-image: url("../img/bg@2x.png");
+  }
+  .header .nav .anchor-saber {
+    background-image: url("../img/saber@2x.png");
+  }
+  .header .nav .anchor-rebas {
+    background-image: url("../img/rebas@2x.png");
+  }
+  .header .nav .anchor-rider {
+    background-image: url("../img/rider@2x.png");
+  }
+  .panel .point-focus figure {
+    background-image: url("../img/point-focus@2x.png");
+  }
+  .panel .point-dependency figure {
+    background-image: url("../img/point-dependency@2x.png");
+  }
+  .panel .point-community figure {
+    background-image: url("../img/point-community@2x.png");
+  }
+  .panel .point-api figure {
+    background-image: url("../img/point-api@2x.png");
+  }
+  .panel .point-smooth figure {
+    background-image: url("../img/point-smooth@2x.png");
+  }
+  .panel .point-mvp figure {
+    background-image: url("../img/point-mvp@2x.png");
+  }
+  .panel .points-platform {
+    background-image: url("../img/point-platform@2x.png");
+  }
+  .panel-rebas .point-isomorphic {
+    background-image: url("../img/point-isomorphic@2x.png");
+  }
+  .panel-saber .title {
+    background-image: url("../img/saber@2x.png");
+  }
+  .panel-rebas .title {
+    background-image: url("../img/rebas@2x.png");
+  }
+  .panel-rider .title {
+    background-image: url("../img/rider@2x.png");
+  }
+  .footer {
+    background-image: url("../img/bg@2x.png");
+  }
 }
 
